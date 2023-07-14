@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-int main(void)
+/**
+ * we are going to the main function
+*/
+int main(void) /*this is the start*/
 {
 	int n; /*declaration n*/
 

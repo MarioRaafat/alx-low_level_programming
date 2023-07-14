@@ -2,7 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * we are going to the main function
+ * main - entry point
+ *
+ * Description: false or true validation
+ *
+ * Return: 0 (success)
 */
 int main(void) /*this is the start*/
 {

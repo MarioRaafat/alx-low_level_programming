@@ -25,7 +25,7 @@ int main(void)
 			putchar(32);
 			putchar('0' + numm);
 			putchar('0' + num);
-			if (x == 9 & xx == 9)
+			if (x == 9 && xx == 9)
 				break;
 			if (x != 9 || xx != 8)
 			{

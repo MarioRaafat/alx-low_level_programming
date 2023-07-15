@@ -20,6 +20,9 @@ int main(void)
 	{
 		for (num = xx + 1; num < 10; num++)
 		{
+			putchar('0' + x);
+			putchar('0' + xx);
+			putchar(32);
 			putchar('0' + numm);
 			putchar('0' + num);
 			if (x == 9 & xx == 9)

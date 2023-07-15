@@ -15,9 +15,9 @@ int main(void)
 	for (xx = 'a'; xx <= 'z';)
 	{
 		if (xx == 'e' || xx == 'q')
-			xx++
+			xx++;
 	putchar(xx);
-	xx++	
+	xx++;
 	}
 	putchar('\n');
 	return (0);

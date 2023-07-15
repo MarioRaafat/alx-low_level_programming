@@ -10,7 +10,7 @@
 */
 int main(void)
 {
-	int num, numm;
+	int num, numm, nummm;
 
 	for (nummm = 0; nummm < 8; numm++)
 	for (numm = nummm + 1; numm < 9; numm++)

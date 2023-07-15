@@ -13,7 +13,9 @@ int main(void)
 	int num, numm, nummm;
 
 	for (nummm = 0; nummm < 8; numm++)
+	{
 	for (numm = nummm + 1; numm < 9; numm++)
+	{
 	for (num = numm + 1; num < 10; num++)
 	{
 		putchar('0' + nummm);
@@ -24,6 +26,8 @@ int main(void)
 		putchar(44);
 		putchar(32);
 		}
+	}
+	}
 	}
 	putchar('\n');
 	return (0);

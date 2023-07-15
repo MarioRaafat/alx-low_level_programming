@@ -16,7 +16,7 @@ int main(void)
 	for (num = numm + 1; num < 10; num++)
 	{
 		putchar('0' + num);
-		purchar('0' + numm);
+		putchar('0' + numm);
 		if (numm != 8)
 		{
 		putchar(44);

@@ -13,8 +13,8 @@ int main(void)
 {
 	int i;
 
-	for(i = 97,i < 123);
+	for (i = 97, i < 123);
 	_putchar(i);
 	_putchar('\n');
-	return(0);
+	return (0);
 }

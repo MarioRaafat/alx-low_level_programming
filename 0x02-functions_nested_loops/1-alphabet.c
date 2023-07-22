@@ -22,5 +22,5 @@ void print_alphabet(int x, int z)
 int main(void)
 {
 	print_alphabet(97, 123);
-	return (0);
+	return(0);
 }

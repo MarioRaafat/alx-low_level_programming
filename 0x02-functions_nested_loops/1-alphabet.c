@@ -9,12 +9,18 @@
  *
  * Return: 0 (success)
 */
-int main(void)
+void print_alphabet(int x, int z)
 {
 	int i;
 
-	for (i = 97; i < 123; i++)
+	for (i = x; i < z; i++)
 	_putchar(i);
 	_putchar('\n');
+	return (0);
+}
+
+int main(void)
+{
+	print_alphabet(97, 123);
 	return (0);
 }

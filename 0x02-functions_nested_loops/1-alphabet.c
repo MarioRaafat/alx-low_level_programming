@@ -1,26 +1,13 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
 #include "main.h"
 /**
- * main - entry point
- *
- * Description: false or true validation
- *
- * Return: 0 (success)
+ * print_alphapet - utilizeson the _putchar function to ptint the alphapet a - z
 */
-void print_alphabet(int x, int z)
+void print_alphabet(void)
 {
-	int i;
+	int ch;
 
-	for (i = x; i < z; i++)
-	_putchar(i);
+	for (ch = 'a'; ch < 'z'; ch++)
+	_putchar(ch);
 	_putchar('\n');
 	return (0);
-}
-
-int main(void)
-{
-	print_alphabet(97, 123);
-	return(0);
 }

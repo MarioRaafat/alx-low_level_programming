@@ -4,7 +4,7 @@
 #include <time.h>
 #include <stdio.h>
 
-void _putchar(char ch);
+void _putchar(char ch)
 putchar(ch);
 
 #endif

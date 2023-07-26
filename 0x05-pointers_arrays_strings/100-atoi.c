@@ -9,7 +9,7 @@
  */
 int _atoi(char *s)
 {
-	int i, n, a, b = 0, c = 0;
+	int i, n, a, sum = 0, finalans;
 
 	for (n = 0; s[n] != '\0'; n++)
 	{
@@ -17,21 +17,17 @@ int _atoi(char *s)
 			i++;
 	}
 	if (i % 2 == 1)
-		putchar(45);
-	for (a = 0; a < n; a++)
-	{
-		if (s[a] < 58 && s[a] > 47)
-			c++;
-	}
-	char xx[c];
-
+		i = -1;
+	else 
+		i = 1;
+	
 	for (a = 0; a < n; a++)
 	{
 		if (s[a] < 58 && s[a] > 47)
 		{
-			xx[b] = s[a];
-			b++;
+		    sum = sum * 10 + (s[a] - '0');
 		}
 	}
-	return (*xx);
+	finalans = i * sum;
+	return (finalans);
 }

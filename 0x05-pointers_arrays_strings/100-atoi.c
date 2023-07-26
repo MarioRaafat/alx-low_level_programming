@@ -23,7 +23,7 @@ int _atoi(char *s)
 		if (s[a] < 58 && s[a] > 47)
 			c++;
 	}
-	char xx[c];
+	int xx[c];
 
 	for (a = 0; a < n; a++)
 	{

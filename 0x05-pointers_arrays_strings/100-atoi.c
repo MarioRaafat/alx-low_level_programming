@@ -18,9 +18,8 @@ int _atoi(char *s)
 	}
 	if (i % 2 == 1)
 		i = -1;
-	else 
+	else
 		i = 1;
-	
 	for (a = 0; a < n; a++)
 	{
 		if (s[a] < 58 && s[a] > 47)

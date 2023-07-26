@@ -9,7 +9,9 @@
  */
 int _atoi(char *s)
 {
-	int i, n, a;
+	int i, n, a, b = 0;
+
+	int xx[];
 
 	for (n = 0; s[n] != '\0'; n++)
 	{
@@ -21,7 +23,10 @@ int _atoi(char *s)
 	for (a = 0; a < n; a++)
 	{
 		if (s[a] < 58 && s[a] > 47)
-			putchar(s[a]);
+		{
+			xx[b] = s[a];
+			b++;
+		}
 	}
-	printf("\n");
+	return (xx);
 }

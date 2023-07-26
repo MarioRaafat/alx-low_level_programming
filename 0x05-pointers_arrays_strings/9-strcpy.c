@@ -8,7 +8,7 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	int i, n, d;
+	int i, n;
 
 	for (n = 0; src[n] != '\0'; n++)
 	{
@@ -17,13 +17,5 @@ char *_strcpy(char *dest, char *src)
 	{
 		dest[i] = src[i];
 	}
-	for (d = 0; d < n; d++)
-	{
-		putchar(src[d]);
-	}
-	printf("\n");
-	for (d = 0; d < n; d++)
-		putchar(dest[d]);
-	printf("\n");
 	return (dest);
 }

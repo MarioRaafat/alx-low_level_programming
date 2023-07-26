@@ -25,4 +25,5 @@ char *_strcpy(char *dest, char *src)
 	for (d = 0; d < n; d++)
 		putchar(dest[d]);
 	printf("\n");
+	return (dest);
 }

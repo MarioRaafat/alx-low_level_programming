@@ -7,12 +7,11 @@
  */
 void puts_half(char *str)
 {
-	int mid, n, fn, i;
+	int mid, n, i;
 
 	for (n = 0; str[n] != '\0'; n++)
 	{
 	}
-	fn = n - 1;
 	for (i = 0; i < n; i++, n--)
 	{
 	}

@@ -14,7 +14,7 @@ char *_strcpy(char *dest, char *src)
 	}
 	for (i = 0; i <= n; i++)
 	{
-		dest[i] = src [i];
+		dest[i] = src[i];
 	}
 	for (d = 0; d < n; d++)
 	{
@@ -22,8 +22,6 @@ char *_strcpy(char *dest, char *src)
 	}
 	printf("\n");
 	for (d = 0; d < n; d++)
-        {
 		putchar(dest[d]);
-        }
 	printf("\n");
 }

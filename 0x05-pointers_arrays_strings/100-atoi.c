@@ -21,12 +21,8 @@ int _atoi(char *s)
 	else
 		i = 1;
 	for (a = 0; a < n; a++)
-	{
 		if (s[a] < 58 && s[a] > 47)
-		{
 		    sum = sum * 10 + (s[a] - '0');
-		}
-	}
 	finalans = i * sum;
 	return (finalans);
 }

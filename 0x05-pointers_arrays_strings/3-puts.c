@@ -1,15 +1,16 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * _puts - prints a string
+ * @str: the string
  *
- * Return: Always 0.
+ * Return: the length of the string
  */
 void _puts(char *str)
 {
 	int i;
 
-	for (i = 0; i != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		_putchar(str[i]);
 	}

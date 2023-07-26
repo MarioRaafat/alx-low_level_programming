@@ -13,7 +13,7 @@ int _atoi(char *s)
 
 	for (n = 0; s[n] != '\0'; n++)
 	{
-		if (s[n] == '-')
+		if (s[n] == 45)
 			i++;
 	}
 	if (i % 2 == 1)

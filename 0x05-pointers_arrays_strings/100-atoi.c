@@ -11,7 +11,7 @@ int _atoi(char *s)
 {
 	int i, n, a, b = 0;
 
-	int xx[];
+	char xx[];
 
 	for (n = 0; s[n] != '\0'; n++)
 	{
@@ -28,5 +28,5 @@ int _atoi(char *s)
 			b++;
 		}
 	}
-	return (xx);
+	return (*xx);
 }

@@ -6,7 +6,6 @@
  * _strcmp - concat 2 string
  * @s1:char
  * @s2:char
- * @xx:int
  * Return:int
  */
 int _strcmp(char *s1, char *s2)

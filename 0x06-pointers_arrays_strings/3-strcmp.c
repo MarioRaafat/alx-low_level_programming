@@ -4,11 +4,11 @@
 
 /**
  * _strcmp - concat 2 string
- * @dest:char
- * @src:char
- * Return:char
+ * @s1:char
+ * @s2:char
+ * Return:int
  */
-char *_strcmp(char *s1, char *s2)
+int *_strcmp(char *s1, char *s2)
 {
 	strcmp(s1, s2);
 	return (s1);

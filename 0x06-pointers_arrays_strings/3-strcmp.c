@@ -8,8 +8,8 @@
  * @src:char
  * Return:char
  */
-char *_strcmp(char *dest, char *src)
+char *_strcmp(char *s1, char *s2)
 {
-	strcmp(dest, src);
-	return (dest);
+	strcmp(s1, s2);
+	return (s1);
 }

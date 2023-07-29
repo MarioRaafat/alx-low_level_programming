@@ -11,9 +11,15 @@ char *string_toupper(char *m)
 {
 	int i;
 
-	for (i = 0; *m[i] != '\0' && 96 < *m[i] < 123; i++)
+	char ch;
+
+	for (i = 0; m[i] != '\0'; i++)
 	{
-		*m[i] = putchar(*m[i] + 32)
+		if ('a' <= m[i] <= 'z')
+		{
+			ch = m[i];
+			m[i] = putchar(ch - 32);
+		}
 	}
 	return (m);
 }

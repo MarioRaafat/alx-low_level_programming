@@ -17,13 +17,13 @@ void print_number(int n)
 	if (xx < 10)
 		for (i = 1; i < 2; i++)
 			putchar(xx % (10 ^ i) + '0');
-	 if (xx < 100)
+	if (xx < 100)
 		for (i = 1; i < 3; i++)
 			putchar(xx % (10 ^ i) + '0');
-	 if (xx < 1000)
+	if (xx < 1000)
 		for (i = 1; i < 4; i++)
 			putchar(xx % (10 ^ i) + '0');
-	 if (xx < 10000)
+	if (xx < 10000)
 		for (i = 1; i < 5; i++)
 			putchar(xx % (10 ^ i) + '0');
 }

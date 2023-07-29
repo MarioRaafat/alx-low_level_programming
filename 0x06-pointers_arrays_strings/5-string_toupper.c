@@ -11,14 +11,11 @@ char *string_toupper(char *m)
 {
 	int i;
 
-	char ch;
-
 	for (i = 0; m[i] != '\0'; i++)
 	{
-		if ('a' <= m[i] <= 'z')
+		if (m[i] >= 97 && m[i] <= 122)
 		{
-			ch = m[i];
-			m[i] = putchar(ch - 32);
+			m[i] = m[i] - 32;
 		}
 	}
 	return (m);

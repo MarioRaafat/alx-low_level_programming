@@ -8,11 +8,11 @@
  */
 int main(int argc, char *argv[])
 {
-	if (argc == 3)
+	if (argc == 2)
 	{
 		printf("%d\n", *argv[1] * *argv[2]);
 	}
-	else 
+	else
 		puts("Error");
 	return (0);
 }

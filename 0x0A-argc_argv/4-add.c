@@ -17,11 +17,13 @@ int main(int argc, char **argv)
 		m = atoi(argv[check]);
 		if (!(m > '0' && m <= '9'))
 			puts("Error");
+		return (1);
 	}
 	for (i = 1; i < argc; i++)
 	{
 		m = atoi(argv[i]);
 		sum += m;
 	}
+	printf("%d\n", sum);
 	return (0);
 }

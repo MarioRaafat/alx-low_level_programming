@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 	for (check = 1; check < argc; check++)
 	{
 		m = atoi(argv[check]);
-		if (!(m > '0' && m <= '9'))
+		if ((m >= 'a' && m <= 'z') || (m >= 'A' && m <= 'Z'))
 		{
 			puts("Error");
 			return (1);

@@ -22,7 +22,8 @@ int main(int argc, char **argv)
 	{
 		m = atoi(argv[i]);
 		sum += m;
-		if (i == arg - 1)
+		if (i == argc - 1)
 			printf("%d\n", sum);
+	}
 	return (0);
 }

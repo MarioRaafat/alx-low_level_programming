@@ -1,6 +1,5 @@
-#include <stdio.h>
-#include <stdarg.h>
 #include "variadic_functions.h"
+
 /**
  * print_numbers - prints numbers given as parameters
  * @separator: string to be printed between numbers
@@ -8,31 +7,22 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	int i, num;
+	unsigned int i;
+	va_list list;
 
-	va_list mm;
+	va_start(list, n);
 
-	va_start(mm, n);
-
-	if (!separator)
 	for (i = 0; i < n; i++)
 	{
-		num = va_arg(mm, int);
-		if (i < n - 1)
-			printf("%d%s ", num, separator);
+		if (!separator)
+			printf("%d", va_arg(list, int));
+		else if (separator && i == 0)
+			printf("%d", va_arg(list, int));
 		else
-			printf("%d", num);
+			printf("%s%d", separator, va_arg(list, int));
 	}
-	else
-	for (i = 0; i < n; i++)
-	{
-		num = va_arg(mm, int);
-		if (i < n - 1)
-			printf("%d ", num);
-		else
-			printf("%d", num);
-	}
-	va_end(mm);
+
+	va_end(list);
 
 	printf("\n");
 }

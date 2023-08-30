@@ -20,26 +20,10 @@ list_t *add_node(list_t **head, const char *str)
 	if (!mm)
 		return (NULL);
 
-	mm->str = str;
+	mm->str = strdup(str);
 	mm->len = len;
 	mm->next = *head;
 	(*head) = mm;
 
 	return (*head);
-}
-size_t print_list(const list_t *h)
-{
-	size_t s = 0;
-
-	while (h)
-	{
-		if (!h->str)
-			printf("[0] (nil)\n");
-		else
-			printf("[%u] %s\n", h->len, h->str);
-		h = h->next;
-		s++;
-	}
-
-	return (s);
 }

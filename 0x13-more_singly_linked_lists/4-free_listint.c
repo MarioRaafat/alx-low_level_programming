@@ -1,6 +1,7 @@
 #include "lists.h"
 /**
  * free_listint - free
+ * @head: pointer
  *
  * BY MARIO
  */

@@ -8,18 +8,23 @@
  * Return: nth node
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
-{
-	unsigned int count, i;
+{unsigned int i;
+
+	if (head == NULL)
+		return (NULL);
 
 	while (head->prev != NULL)
 		head = head->prev;
-	for (count = 0; head; count++)
+
+	i = 0;
+
+	while (head != NULL)
+	{
+		if (i == index)
+			break;
 		head = head->next;
-	while (head->prev != NULL)
-		head = head->prev;
-	if (index > count)
-		return (NULL);
-	for (i = 0; i < index; i++)
-		head = head->next;
+		i++;
+	}
+
 	return (head);
 }
